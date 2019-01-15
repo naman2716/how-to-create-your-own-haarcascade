@@ -1,0 +1,86 @@
+mkdir opencv-workspace
+cd opencv-workspace
+sudo apt-get install git
+git clone https://github.com/Itseez/opencv.git
+sudo apt-get install build-essential
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libdc1394-22-dev
+sudo apt-get install libopencv-dev
+
+
+
+make
+sudo make install
+sudo cp /usr/local/lib/libgraph.*/usr/lib
+clear
+sudo apt-get install build-essential
+sudo apt-get install libsdl-image1.2 libsdl-image1.2-dev guile-1.8 guile-1.8-dev libsdl1.2debian libart-2.0-dev libaudiofile-dev libesd0-dev libdirectfb-dev libdirectfb-extra libfreetype6-dev libxext-dev x11proto-xext-dev libfreetype6 libaa1 libaa1-dev libslang2-dev libasound2 libasound2-dev
+cd ..
+sudo apt-get install libsdl-image1.2 libsdl-image1.2-dev guile-1.8 guile-1.8-dev libsdl1.2debian libart-2.0-dev libaudiofile-dev libesd0-dev libdirectfb-dev libdirectfb-extra libfreetype6-dev libxext-dev x11proto-xext-dev libfreetype6 libaa1 libaa1-dev libslang2-dev libasound2 libasound2-dev
+sudo apt-get install build-essential
+sudo apt-get install libsdl-image1.2 libsdl-image1.2-dev guile-1.8 guile-1.8-dev libsdl1.2debian libart-2.0-dev libaudiofile-dev libesd0-dev libdirectfb-dev libdirectfb-extra libfreetype6-dev libxext-dev x11proto-xext-dev libfreetype6 libaa1 libaa1-dev libslang2-dev libasound2 libasound2-dev
+sudo apt-get install libsdl-image1.2 libsdl-image1.2-dev guile-1.8 \
+
+
+
+sudo make install
+sudo cp /usr/local/lib/libgraph.* /usr/lib
+sudo apt install guile-2.0-dev  # In case you didn't install it earlier
+CPPFLAGS="$CPPFLAGS $(pkg-config --cflags-only-I guile-2.0)"   CFLAGS="$CFLAGS $(pkg-config --cflags-only-other guile-2.0)"   LDFLAGS="$LDFLAGS $(pkg-config --libs guile-2.0)"   ./configure
+make
+sodu make install
+
+
+cd opencv-workspace/
+ls
+git clone https://github.com/Itseez/opencv.git
+sudo apt-get install build-essential
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+sudo apt-get install libopencv-dev
+python3 --version
+touch image_capturing.py
+subl image_capturing.py 
+cd opencv-workspace/
+mkdir uglies
+touch find_uglies.py
+subl find_uglies.py 
+cd opencv-workspace/
+touch create_pos_neg.py
+subl create_pos_neg.py 
+python3 make_positive.py 
+ls
+mkdir data
+mkdir info
+touch num_imaes_neg.py
+subl num_imaes_neg.py 
+python3 num_imaes_neg.py 
+cd opencv-workspace/
+ls
+subl image_capturing.py 
+python image_capturing.py 
+python3 image_capturing.py 
+sudo ./pip3 install urllib.request
+sudo ./pip install urllib.request
+sudo apt-get install python-pip python-dev build-essential
+sudo pip install --upgrade pip
+sudo pip install --upgrade virtualenv
+sudo ./pip install urllib.request
+sudo pip install urllib.request
+sudo pip install urllib
+python -version
+python --version
+sudo pip install urllib2
+sudo apt install python3-pip
+python3
+sudo pip3 install opencv-python
+python3
+python3 image_capturing.py 
+python3 find_uglies.py 
+python3 create_pos_neg.py 
+
+
+opencv_createsamples -info info/info.lst -num 1700 -w 20 -h 20 -vec positives.vec
+
+
+opencv_createsamples -img watch5050.jpg -bg bg.txt -info info/info.lst -pngoutput info -maxxangle 0.5 -maxyangle 0.5 -maxzangle 0.5 -num 1700 -show
